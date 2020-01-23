@@ -1,6 +1,7 @@
-package com.alex.movies.model;
+package com.alex.movies.model.entity;
 
 import java.time.LocalDate;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +9,15 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name="MOVIES")
 @Entity
 public class Movie {
