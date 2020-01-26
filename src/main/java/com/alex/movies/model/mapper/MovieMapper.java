@@ -1,5 +1,7 @@
 package com.alex.movies.model.mapper;
 
+import java.util.List;
+
 import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -12,4 +14,6 @@ public interface MovieMapper {
 
 	MovieDTO movieEntityToDto(Movie movie);
 	Movie movieDtoToEntity(MovieDTO movieDTO);
+	List<MovieDTO> movieListToDTO(List<Movie> movies);
+	List<Movie> movieDTOListToMovie(List<MovieDTO> moviesDTO);
 }
