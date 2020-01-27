@@ -38,8 +38,8 @@ public class Movie {
 	@Column(name="RATE")
 	private Integer rate;
 	
-	@Lob
-	@Column(name="MOVIE_PICTURE")
-	private byte[] image;
+	//@Lob
+	//@Column(name="MOVIE_PICTURE")
+	//private byte[] image;
 
 }

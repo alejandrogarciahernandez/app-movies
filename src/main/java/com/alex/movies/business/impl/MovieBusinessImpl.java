@@ -30,7 +30,6 @@ public class MovieBusinessImpl implements MovieBusiness {
 		movieToUpdate.setTitle(movie.getTitle());
 		movieToUpdate.setRate(movie.getRate());
 		movieToUpdate.setReleaseDate(movie.getReleaseDate());
-		movieToUpdate.setImage(movie.getImage());
 		movieRepository.save(movieToUpdate);
 	}
 
@@ -45,8 +44,8 @@ public class MovieBusinessImpl implements MovieBusiness {
 	}
 
 	@Override
-	public void deleteMovie(Movie movie) {
-		movieRepository.delete(movie);
+	public void deleteMovie(Long id) {
+		movieRepository.deleteById(id);
 		;
 	}
 

@@ -27,5 +27,5 @@ public class MovieDTO {
 	
 	private Integer rate;
 
-	private byte[] image;
+	//private byte[] image;
 }

@@ -41,9 +41,9 @@ public class MovieService {
 		return movieMapper.movieListToDTO(movieBusiness.getAllMovies());
 	}
 	
-	@DeleteMapping
-	public void deleteMovie(@RequestBody Movie movie) {
-		movieMapper.movieEntityToDto(movieBusiness.deleteMovie(movie));
+	@DeleteMapping("/{id}")
+	public void deleteMovie(@PathVariable(value= "id") Long id) {
+		movieBusiness.deleteMovie(id);
 	}
 	
 	@PostMapping

@@ -43,7 +43,7 @@ public interface MovieBusiness {
 	 * Delete one movie
 	 * @param movie
 	 */
-	void deleteMovie(Movie movie);
+	void deleteMovie(Long id);
 	
 	
 }
